@@ -1,0 +1,28 @@
+================================================================================
+Programowanie Sieciowe                               Autor: Vladyslav Slovinskyi
+================================================================================
+
+* Zawartosc:
+============
+
+Katalog BBCWeather zawiera projekt, ktory pobiera informacje na temat aktualnej 
+temperatury powietrza w Krakowie ze strony https://www.bbc.com/weather/3094802.
+Za pomoca narzedzia deweloperskiego przegladarki Mozilla Firefox znaleziono 
+dokument type JSON, zawierajacy potrzebne nam dane:
+
+https://weather-broker-cdn.api.bbci.co.uk/en/forecast/aggregated/3094802
+
+Do parsowania plikow typu JSON zostala wykorzystana biblioteka Google Gson.
+--------------------------------------------------------------------------------
+* Jak uruchomic programy (Linux):
+=================================
+
+Katalog zawiera skrypt build.sh do zbudowania oraz uruchomienia projektu.
+
+-> Aby zbudowac oraz uruchomic projekt, nalezy wykonac:
+       $ bash build.sh
+       
+   W wyniku zostanie utworzone archiwum JAR (BBCWeather.jar) oraz plik tekstowy 
+   WeatherKrakow.txt, zawierajacy informacje na temat aktualnej 
+   temperatury powietrza w Krakowie.          
+================================================================================
