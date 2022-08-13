@@ -1,0 +1,24 @@
+================================================================================
+Programowanie sieciowe           UDPServer           Autor: Vladyslav Slovinskyi
+================================================================================
+
+* Zawartosc:
+============
+
+Katalog UDPServer zawiera implementacje serwera UDP/IP sumujacego ciag liczb 
+naturalnych.
+
+* Jak uruchomic programy:
+=========================
+
+Katalog zawiera program Makefile do kompilacji powyzszych programow,
+a takze czyszczenia katalogu.
+
+-> Aby skompilowac i uruchomic projekt nalezy wykonac:
+       $ make
+       $ ./UDPServer.x <PORT>
+       
+-> Aby wyczyscic zawartosc katalogu (usunac zbedne pliki), nalezy wykonac:
+       $ make clean
+        
+================================================================================
