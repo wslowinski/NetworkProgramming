@@ -16,8 +16,8 @@ steps:
 
 ## Necessary POSIX functions  
 ```cpp
-int socket(int domain, int type, int protocol);                        // Creates an unbound socket in the specified domain, and 
-                                                                       // returns socket file descriptor.
+int socket(int domain, int type, int protocol);                        // Creates an unbound socket in the specified  
+                                                                       // domain, and returns socket file descriptor.
                                                                        
 int bind(int sockfd, const struct sockaddr *addr, socklen_t addrlen);  // Assigns address to the unbound socket.
 
