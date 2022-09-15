@@ -44,7 +44,7 @@ const char* array_sum(const char* buf) {
 
 int main(int argc, char** argv) {
     if (argc < 2) {
-        perror("[Error] Prosze podac nr portu jako argument wywolania programu!");
+        perror("[Error] Please give me a port number");
         exit(1);
     }
     else {
@@ -71,7 +71,7 @@ int main(int argc, char** argv) {
                 perror("[Error] Recvfrom");
                 exit(1);
             }
-            printf("Przeslano dane %d\n", counter);
+            printf("Data was sent: %d\n", counter);
             const char* result = array_sum(buf);
             if (sendto(s, result, strlen(result), 0, (struct sockaddr*)&si_other, slen) == -1) {
                 perror("[Error] Sendto");
