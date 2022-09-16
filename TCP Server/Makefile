@@ -7,8 +7,8 @@ EXEC_SERVER  = $(SERVER).x
 OBJS_SERVER  = $(SERVER).o
 LIBS_SERVER  = 
 
-CXXFLAGS = -std=c++14
-LFLAGS = -std=c++14
+CXXFLAGS = -std=c++20
+LFLAGS = -std=c++20
 
 CXX = g++
 LD = $(CXX)
