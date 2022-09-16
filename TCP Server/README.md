@@ -1,4 +1,4 @@
-# UDP Server
+# TCP Server
 The Transmission Control Protocol (TCP) is one of the main protocols of the 
 Internet protocol suite. TCP provides reliable, ordered, and error-checked 
 delivery of a stream of octets (bytes) between applications running on hosts 
@@ -36,18 +36,18 @@ Project is created with ```C++20```.
 ## Setup
 1. To run this project, install it locally;
 2. The following make command will help you in compiling the Makefile into an executable program:
-```
-$ make
-```
+    ```
+    $ make
+    ```
 3. Finally, we are ready to run the executable file we created in the last step through the Terminal. Run the following command to do so:
-``` 
-$ ./TCPServer.x <PORT>
-```
+    ``` 
+    $ ./TCPServer.x <PORT>
+    ```
 4. In another terminal please execute following commands:
-```
-$ printf "10 200 300 400\r\n5000 6\r\n"|socat stdio tcp4:127.0.0.1:<PORT> > out.txt
-```
-or
-```
-$ printf "10 200 300 400\r\naa bbb c\r\n"|socat stdio tcp4:127.0.0.1:<PORT>|od -A d -t u1 -t c
-```
+    ```
+    $ printf "10 200 300 400\r\n5000 6\r\n"|socat stdio tcp4:127.0.0.1:<PORT> > out.txt
+    ```
+    or
+    ```
+    $ printf "10 200 300 400\r\naa bbb c\r\n"|socat stdio tcp4:127.0.0.1:<PORT>|od -A d -t u1 -t c
+    ```
