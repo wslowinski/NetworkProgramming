@@ -2,7 +2,9 @@
 Web scraping is data scraping used for extracting data from websites. This 
 directory contains a Java program that downloads the current weather in Krakow 
 (Poland) from the BBC website:
+
 https://weather-broker-cdn.api.bbci.co.uk/en/forecast/aggregated/3094802
+
 Google Gson was used to deserialize a JSON to Java object.
 
 ## Content
@@ -18,4 +20,4 @@ Project is created with ```Java 11```.
     ```
     $ bash build.sh
     ```
-3. Finally, ```WeatherKrakow.txt``` file contains the current weather in Krakow
+3. Finally, ```WeatherKrakow.txt``` file contains the current weather in Krakow.
